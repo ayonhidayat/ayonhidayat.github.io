@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* landing page start */
+
+.landing-page {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform-origin: top;
+  transition: 0.8s linear;
+  z-index: 9999;
+}
+
+.landing-page.hidden {
+  transform: translateY(-800px);
+}
+
+.landing-page .landing-video {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+
+.landing-page .landing-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.landing-page .landing-title {
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.landing-page .landing-title h1 {
+  font-size: 5rem;
+  color: rgb(235, 164, 31);
+}
+
+.landing-page .landing-title span {
+  color: wheat;
+}
+
+.landing-page .landing-title .eksplor-button {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-justify: auto;
+  font-size: 1.3rem;
+  color: white;
+}
+.landing-page .landing-title .eksplor-button:hover {
+  background-color: rgb(235, 164, 31);
+  border-radius: 5px;
+}
+/* landing page end */
+/* navbar start */
+.navbar {
+  box-shadow: 0 2px 7px gray;
+  top: 0;
+  position: fixed;
+  padding: 10px 5%;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgb(75, 77, 75);
+}
+/* navbar end*/
+
+/* media queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+}
