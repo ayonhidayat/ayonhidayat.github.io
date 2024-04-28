@@ -84,6 +84,33 @@
   align-items: center;
   border-bottom: 2px solid rgb(75, 77, 75);
 }
+
+.navbar .navbar-title {
+  display: flex;
+}
+
+.navbar .navbar-title h1 {
+  font-size: 2rem;
+  color: rgb(235, 164, 31);
+}
+
+.navbar .navbar-title span {
+  text-transform: uppercase;
+  color: rgb(55, 56, 57);
+}
+
+.navbar .navbar-nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar .navbar-nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(55, 56, 57);
+}
 /* navbar end*/
 
 /* media queries */
