@@ -8,7 +8,6 @@
 /* landing page start */
 
 .landing-page {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -84,7 +83,7 @@
     rgb(235, 164, 31)
   );
   width: 100%;
-  height: 10vh;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +161,6 @@
 }
 
 .hero .hero-image {
-  background-color: blue;
   width: 80rem;
   height: 80rem;
   border-radius: 1rem;
@@ -175,12 +173,11 @@
 }
 .hero .hero-image .image {
   position: relative;
-  right: -7rem;
   bottom: -5rem;
   width: 100%;
   height: 80%;
   transform: rotate(320deg);
-  right: 23rem;
+  right: 24rem;
 }
 
 .hero .hero-image .image img {
