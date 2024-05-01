@@ -2,21 +2,23 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "poppins";
 }
 
 /* landing page start */
 
 .landing-page {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100vh;
   transform-origin: top;
-  transition: 0.8s linear;
-  z-index: 9999;
+  transition: 2.5s linear;
+  z-index: 99999999;
 }
 
 .landing-page.hidden {
-  transform: translateY(-800px);
+  transform: translateY(-5000px);
 }
 
 .landing-page .landing-video {
@@ -56,13 +58,13 @@
 }
 
 .landing-page .landing-title .eksplor-button {
-  width: 8rem;
-  height: 3rem;
+  width: 15rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-justify: auto;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: white;
 }
 .landing-page .landing-title .eksplor-button:hover {
@@ -76,13 +78,18 @@
   top: 0;
   position: fixed;
   padding: 7px 3%;
-  background-color: rgb(238, 238, 238);
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 222, 222),
+    rgb(235, 164, 31)
+  );
   width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgb(75, 77, 75);
+  z-index: 99999;
 }
 
 .navbar .navbar-title {
@@ -90,20 +97,8 @@
   align-items: center;
   justify-content: space-around;
   gap: 10%;
-  width: 25%;
+  width: 20%;
   height: 100%;
-  padding: 5px 1%;
-}
-
-.navbar .navbar-title .logo-geoper {
-  width: 18%;
-}
-
-.navbar .navbar-title .logo-geoper img {
-  width: 100%;
-  height: auto;
-  background-color: red;
-  border-radius: 50%;
 }
 
 .navbar .navbar-title h1 {
@@ -120,31 +115,99 @@
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+  box-sizing: border-box;
 }
 
-.navbar .navbar-nav a {
+.navbar .navbar-nav .link {
+  display: inline;
   text-decoration: none;
   font-size: 2rem;
   text-transform: capitalize;
   color: rgb(55, 56, 57);
+  transition: 0.2s linear;
+  transform-origin: center;
+  box-sizing: border-box;
 }
+
+.navbar-nav .link:hover {
+  color: #fff;
+}
+
+.navbar-nav .link::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background-color: #fff;
+  display: block;
+  left: 0;
+  bottom: -10px;
+  transform-origin: left;
+  transition: 0.3s linear;
+}
+
+.navbar-nav .link:hover::after {
+  width: 100%;
+}
+
 /* navbar end*/
+
+/* main start */
+.hero {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 50rem;
+  background-color: rgb(114, 111, 111);
+  overflow: hidden;
+}
+
+.hero .hero-image {
+  background-color: blue;
+  width: 80rem;
+  height: 80rem;
+  border-radius: 1rem;
+  right: -23rem;
+  position: relative;
+  top: 1rem;
+  transform: rotate(40deg);
+  overflow: hidden;
+  object-fit: cover;
+}
+.hero .hero-image .image {
+  position: relative;
+  right: -7rem;
+  bottom: -5rem;
+  width: 100%;
+  height: 80%;
+  transform: rotate(320deg);
+  right: 23rem;
+}
+
+.hero .hero-image .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0.5rem;
+}
+
+/* main ends */
 
 /* media queries */
 /* laptop */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 77%;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 65%;
+    font-size: 70%;
   }
 }
 @media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
