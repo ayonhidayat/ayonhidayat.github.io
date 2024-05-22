@@ -20,35 +20,221 @@
       </div>
     </div>
     <!-- landing page end -->
-    <!-- navbar start -->
-    <nav class="navbar">
-      <div class="navbar-title">
-        <h1>GEOPER <span>netuka</span></h1>
-      </div>
-      <div class="navbar-nav">
-        <a href="#" class="link">home</a>
-        <a href="#" class="link">about</a>
-        <a href="#" class="link">berita</a>
-        <a href="#" class="link">contact</a>
-      </div>
-      <div class="navbar-ekstra">
-        <a href="#"><img src="src/icon/search.svg" alt="" /></a>
-        <a href="#"><img src="src/icon/user-plus.svg" alt="" /></a>
-        <a href="#" id="menu" onclick="activeNavbar()"
-          ><img src="src/icon/menu.svg" alt="" />
-        </a>
-      </div>
-    </nav>
-    <!-- navbar end -->
-    <!-- home page start -->
-    <div class="hero" id="home">
-      <div class="hero-image">
-        <div class="image">
-          <img src="src/img/main-image1.jpg" alt="" />
+    <div class="container-main hidden">
+      <!-- navbar start -->
+      <nav class="navbar">
+        <div class="navbar-title">
+          <h1>GEOPER <span>netuka</span></h1>
+        </div>
+        <div class="navbar-nav">
+          <a href="#home" class="link">home</a>
+          <a href="#berita" class="link">berita</a>
+          <a href="#about" class="link">about</a>
+          <a href="#contact" class="link">contact</a>
+        </div>
+        <div class="navbar-ekstra">
+          <input type="search" class="search-bar" />
+          <a href="#" id="search-icon"
+            ><img src="src/icon/search.svg" alt=""
+          /></a>
+          <a href="pages/login.html"
+            ><img src="src/icon/user-plus.svg" alt=""
+          /></a>
+          <a href="#" id="menu" onclick="activeNavbar()"
+            ><img src="src/icon/menu.svg" alt="" />
+          </a>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <!-- home page start -->
+      <div class="hero" id="home">
+        <div class="hero-title">
+          <div class="title-1">
+            <div class="text-1">teknik geologi</div>
+            <div class="text-2">pertambangan</div>
+          </div>
+          <div class="title-2">smkn 1 karanggayam</div>
+        </div>
+        <div class="hero-image">
+          <div class="image">
+            <img src="src/img/main-image1.jpg" alt="" />
+          </div>
         </div>
       </div>
+      <!-- home page end -->
+      <div class="hero-berita" id="berita">
+        <h1>BERITA <span>TERBARU</span></h1>
+        <div class="container-berita">
+          <div class="wrapper">
+            <div class="card-berita">
+              <img
+                src="src/img/berita/kunjungan-industri.jpg"
+                alt=""
+                class="img"
+              />
+              <div class="berita-title">
+                <h3>
+                  <a href="berita/kunjungan-industri.html"
+                    >kunjungan siswa SMKN 1 KARANGGAYAM di BRIN Karangsambung
+                    salah satu bagian dari kegiatan P5BK tema kebekerjaan</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="card-berita">
+              <img src="src/img/berita/pameran.jpg" alt="" class="img" />
+              <div class="berita-title">
+                <h3>
+                  <a href="berita/pameran.html"
+                    >pameran P5BK kelas 10 SMKN 1 KARANGGAYAM</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="card-berita">
+              <img
+                src="src/img/berita/foto-depan-petruk .jpg"
+                alt=""
+                class="img"
+              />
+              <div class="berita-title">
+                <h3>
+                  <a href="berita/kunjungan-industri.html"
+                    >Field trip siswa kelas 11 ke goa petruk dan pantai jetis</a
+                  >
+                </h3>
+              </div>
+            </div>
+            <div class="card-berita">
+              <img
+                src="src/img/berita/praktek-ploting.jpg"
+                alt=""
+                class="img"
+              />
+              <div class="berita-title">
+                <h3>
+                  <a href="berita/kunjungan-industri.html"
+                    >uji coba praktikum lapangan ploting dan pengenalan struktur
+                    batuan di desa Karangmaja, Karanggayam</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button><a href="berita/berita.html">selengkapnya</a></button>
+      </div>
+      <!-- berita end -->
+      <div class="hero-about" id="about">
+        <h1><span>TENTANG</span> KAMI</h1>
+        <div class="container-about">
+          <div class="container-foto">
+            <img src="src/img/berita/foto-depan-petruk .jpg" alt="" />
+          </div>
+          <div class="container-text">
+            <div class="container-text-box">
+              geologi pertambangan adalah salah satu program keahlian di SMKN 1
+              Karanggayam, program keahlian ini dimulai pada tahun 2013. 4 tahun
+              setelah SMKN 1 Karanggayam diresmikan
+            </div>
+            <div class="container-text-box">
+              geologi pertambangan merupakan program keahlian yang berjalan di
+              bidang energi dan pertambangan. mempelajari tentang bebatuan,
+              mineral, survey lapangan dan ilmu tentang kebumian lainnya
+            </div>
+            <div class="container-text-box">
+              selalu memberikan lulusan terbaik setiap tahun, sehingga dapat
+              bersaing di dunia kerja, dan dapat melanjutkan pendidikan di
+              tingkat selajutnya
+            </div>
+          </div>
+        </div>
+        <button><a href="pages/about.html">selengkapnya</a></button>
+      </div>
+      <div class="container-contact" id="contact">
+        <h1>contact</h1>
+        <div class="container-value">
+          <div class="container-list">
+            <div class="block">
+              <div class="contact-list">smknegeri1karanggayam@yahoo.com</div>
+              <div class="image-list">
+                <img src="src/icon/mail.svg" alt="" class="image-svg" />
+              </div>
+            </div>
+            <div class="block">
+              <div class="contact-list">082328563142</div>
+              <div class="image-list">
+                <img src="src/icon/phone.svg" alt="" class="image-svg" />
+              </div>
+            </div>
+            <div class="block">
+              <div class="contact-list">@geologinetuka</div>
+              <div class="image-list">
+                <img src="src/icon/instagram.svg" alt="" class="image-svg" />
+              </div>
+            </div>
+            <div class="block">
+              <div class="contact-list">geologinetuka@gmail.com</div>
+              <div class="image-list">
+                <img src="src/icon/mail.svg" alt="" class="image-svg" />
+              </div>
+            </div>
+          </div>
+          <div class="container-gm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1874047846286!2d109.65174587449641!3d-7.5545341924591956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ab3d9ed6b1617%3A0xdd101b669a345c4b!2sSMK%20Negeri%201%20Karanggayam!5e0!3m2!1sid!2sid!4v1716298422852!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-logo">
+          <div class="footer-logo-image">
+            <img src="src/img/logo-geoper.png" alt="" />
+          </div>
+          <div class="footer-logo-text">
+            <h1>GEOLOGI <span>PERTAMBANGAN</span></h1>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h1>SITE</h1>
+          <div class="footer-nav-list">
+            <ul>
+              <li><a href="#home">home</a></li>
+              <li><a href="#berita">berita</a></li>
+              <li><a href="#about">tentang kami</a></li>
+              <li><a href="#contact">kontak</a></li>
+              <li><a href="https://ayonhidayat.github.io">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h1>kontak</h1>
+          <div class="container-contact-list">
+            smknegeri1karanggayam@yahoo.com
+          </div>
+          <div class="container-contact-list">geologinetuka@gmail.com</div>
+          <div class="container-contact-list">082328563142</div>
+          <div class="container-contact-list">@geologinetuka</div>
+        </div>
+        <div class="footer-login">
+          <form action="">
+            <input type="text" placeholder="nama" />
+            <input type="email" placeholder="email" />
+            <input type="password" placeholder="password" />
+            <button type="submit">kirim</button>
+          </form>
+        </div>
+      </footer>
     </div>
-    <!-- home page end -->
     <script src="js/index.js"></script>
   </body>
 </html>
+
+<!-- end task DAM 2023-2024 -->

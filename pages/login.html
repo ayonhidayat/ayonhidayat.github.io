@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Kunjungan Industri</title>
+    <link rel="shortcut icon" href="../src/img/logo-geoper.png" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <div class="navbar-title">
+        <h1>GEOPER <span>netuka</span></h1>
+      </div>
+      <div class="navbar-nav">
+        <a href="../index.html" class="link">home</a>
+        <a href="../berita/berita.html" class="link">berita</a>
+        <a href="about.html" class="link">about</a>
+        <a href="../index.html#contact" class="link">contact</a>
+      </div>
+      <div class="navbar-ekstra">
+        <input type="search" class="search-bar" />
+        <a href="#" id="search-icon"
+          ><img src="../src/icon/search.svg" alt=""
+        /></a>
+        <a href=""><img src="../src/icon/user-plus.svg" alt="" /></a>
+        <a href="#" id="menu" onclick="activeNavbar()"
+          ><img src="../src/icon/menu.svg" alt="" />
+        </a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <main class="main-login">
+      <form action="">
+        <h1>MASUK</h1>
+        <label for="nama">NAMA</label>
+        <input type="text" placeholder="nama" required id="nama" />
+        <label for="">EMAIL</label>
+        <input type="email" placeholder="email" required id="email" />
+        <label for="">password</label>
+        <input type="password" placeholder="password" required id="password" />
+        <div class="main-login-gender">
+          <input
+            type="radio"
+            name="gender"
+            id="laki-laki"
+            value="laki-laki"
+            required
+          />laki-laki
+          <input
+            type="radio"
+            name="gender"
+            id="perempuan"
+            value="perempuan"
+            required
+          />perempuan
+        </div>
+        <button type="submit">kirim</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <div class="footer-logo-image">
+          <img src="../src/img/logo-geoper.png" alt="" />
+        </div>
+        <div class="footer-logo-text">
+          <h1>GEOLOGI <span>PERTAMBANGAN</span></h1>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h1>SITE</h1>
+        <div class="footer-nav-list">
+          <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../berita/berita.html">berita</a></li>
+            <li><a href="about.html">tentang kami</a></li>
+            <li><a href="../index.html">kontak</a></li>
+            <li><a href="https://ayonhidayat.github.io">github</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h1>kontak</h1>
+        <div class="container-contact-list">
+          smknegeri1karanggayam@yahoo.com
+        </div>
+        <div class="container-contact-list">geologinetuka@gmail.com</div>
+        <div class="container-contact-list">082328563142</div>
+        <div class="container-contact-list">@geologinetuka</div>
+      </div>
+      <div class="footer-login">
+        <form action="">
+          <input type="text" placeholder="nama" />
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button type="submit">kirim</button>
+        </form>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
